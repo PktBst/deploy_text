@@ -1,10 +1,8 @@
-const express = require('express')
-const app = express()
-const PORT = 4000
+const express = require("express");
+const app = express();
 
-app.use('/',(req,res)=>{
-    res.send('yeah buddyyy light weight')
-})
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
-app.listen(PORT,()=>console.log('server online'))
+app.listen(4000, () => console.log("Server ready on port 4000."));
 
+module.exports = app;
